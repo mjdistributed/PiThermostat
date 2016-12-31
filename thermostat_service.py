@@ -76,8 +76,7 @@ class HTTPServerV6(HTTPServer):
 def run():
   	print('http server is starting...')
   	#ip and port of server <- IP set dynamically
-  	#by default http server port is 80
-  	server_address = ('', 8080)
+  	server_address = ('', 8072)
   	httpd = HTTPServerV6(server_address, CustomHTTPRequestHandler)
   	# httpd = SocketServer.TCPServer(server_address, CustomHTTPRequestHandler)
   	print('http server is running...')

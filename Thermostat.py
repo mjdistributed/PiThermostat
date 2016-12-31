@@ -5,7 +5,7 @@ import wiringpi
 class Thermostat:
 	ON_DEGREE = 200
 	OFF_DEGREE = 100
-	OUTPUT_PIN = 18
+	OUTPUT_PIN = 12
 	DELAY_PERIOD = 0.01
 
 	def __init__(self):
