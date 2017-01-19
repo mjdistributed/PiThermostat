@@ -22,6 +22,9 @@ class Thermostat:
 		# divide down clock
 		wiringpi.pwmSetClock(192)
 		wiringpi.pwmSetRange(2000)
+
+                # start in off position
+		wiringpi.pwmWrite(Thermostat.OUTPUT_PIN, Thermostat.OFF_DEGREE)
 	
 	def turn_on(self):
 		for pulse in range(self.current_degree, Thermostat.ON_DEGREE, 1):
